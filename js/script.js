@@ -105,7 +105,7 @@ if (!('IntersectionObserver' in window)){
 	
 	body.appendChild(currentElement);
 
-setTimeout(lazyLoad, 100);
+setTimeout(lazyLoad, 1000);
 	lazyLoad();
 } else lazyLoad();
 
