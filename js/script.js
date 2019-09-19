@@ -104,13 +104,7 @@ if (!('IntersectionObserver' in window)){
 	currentElement.src = "js/intersection-observer.js";
 	
 	body.appendChild(currentElement);
-//document.addEventListener("load", lazyLoad);
 
-// document.addEventListener('ready', function() {
-// 	console.log(1);
-// 	setTimeout(lazyLoad, 10);
-// });
-//setTimeout(lazyLoad, 1000);
 currentElement.onload = function() {
  	setTimeout(lazyLoad, 10);
 };
