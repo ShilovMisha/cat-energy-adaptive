@@ -118,6 +118,11 @@ function IntersectionObserver(callback, opt_options) {
   this.rootMargin = this._rootMarginValues.map(function(margin) {
     return margin.value + margin.unit;
   }).join(' ');
+
+
+
+
+
 }
 
 
@@ -164,6 +169,8 @@ IntersectionObserver.prototype.observe = function(target) {
   this._observationTargets.push({element: target, entry: null});
   this._monitorIntersections();
   this._checkForIntersections();
+
+
 };
 
 
@@ -737,5 +744,8 @@ function getParentNode(node) {
 // Exposes the constructors globally.
 window.IntersectionObserver = IntersectionObserver;
 window.IntersectionObserverEntry = IntersectionObserverEntry;
+
+
+
 
 }());

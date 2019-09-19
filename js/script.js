@@ -105,7 +105,15 @@ if (!('IntersectionObserver' in window)){
 	
 	body.appendChild(currentElement);
 //document.addEventListener("load", lazyLoad);
-setTimeout(lazyLoad, 100);
+
+// document.addEventListener('ready', function() {
+// 	console.log(1);
+// 	setTimeout(lazyLoad, 10);
+// });
+//setTimeout(lazyLoad, 1000);
+currentElement.onload = function() {
+ 	setTimeout(lazyLoad, 10);
+};
 	
 } else lazyLoad();
 
