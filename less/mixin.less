@@ -1,0 +1,40 @@
+.decorNone(){
+	text-decoration: none;
+	color: white;
+}
+.list-reset(){
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.pseudo-elem(){
+	position: absolute;
+	display: inline-block;
+	content: "";
+}
+.title-marker(@top: 60%){
+	position: relative;
+	&:after {
+		.pseudo-elem();
+		height: 3px;
+		width: 100vw;
+		background-color: #68b738;
+		top: @top;
+		left: 100%;
+		@media (min-width: @tablet-width) {
+			z-index: -1;
+			transform: translateX(-50%);
+			left: auto;
+			width: 200vw;
+		}
+	}
+	
+}
+.custom-placeholder(){
+	&:-moz-placeholder 			 {color: inherit; font-family: inherit;}
+	&::-webkit-input-placeholder {color: inherit; font-family: inherit;}
+	&::-moz-placeholder          {color: inherit; font-family: inherit;}/* Firefox 19+ */
+	&:-moz-placeholder           {color: inherit; font-family: inherit;}/* Firefox 18- */
+	&:-ms-input-placeholder      {color: inherit; font-family: inherit;}
+}
+	

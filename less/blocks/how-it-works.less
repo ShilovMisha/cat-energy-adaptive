@@ -1,0 +1,121 @@
+.how-it-works {
+	padding-top: 38px;
+	padding-bottom: 42px;
+}
+.how-it-works__list {
+	.list-reset();
+}
+.how-it-works__item {
+	font-size: 14px;
+	line-height: 18px;
+	padding-left: 80px;
+	min-height: 60px;
+	position: relative;
+	margin-top: 20px;
+	&:first-child{
+		margin-top: 0;
+	}
+	&:before{
+		.pseudo-elem();
+		width: 60px;
+		height: 60px;
+		background-color: #68b738;
+		left: 0;
+		top: 0;
+		background-image: url('../img/advantage-1.png');
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	&:nth-child(4n+2):before{
+		background-image: url('../img/advantage-2.png');
+	}
+	&:nth-child(4n+3):before{
+		background-image: url('../img/advantage-3.png');
+	}
+	&:nth-child(4n+4):before{
+		background-image: url('../img/advantage-4.png');
+	}
+
+}
+
+.how-it-works__title {
+	margin: 0;
+	padding: 0;
+	font-size: 36px;
+	font-weight: 400;
+	margin-bottom: 49px;
+	letter-spacing: 0.006em;
+}
+.how-it-works__content {
+	margin: 0;
+	padding-top: 2px;
+}
+
+@media (min-width: @tablet-width) {
+	.how-it-works {
+		padding-top: 45px;
+		padding-bottom: 0;
+		margin-bottom: -30px;
+	}
+	.how-it-works__list {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		padding-right: 75px;
+		counter-reset: count;
+	}
+	.how-it-works__item {
+		min-height: 235px;
+		margin: 0;
+		width: 250px;
+		padding-left: 0;
+		padding-top: 110px;
+		margin-bottom: 82px;
+		margin-right: 10%;
+		counter-increment: count;
+		position: relative;
+		&:before {
+			width: 80px;
+			height: 80px;
+		}
+		&:after {
+			content: counter(count);
+			font-size: 281px;
+			line-height: 207px;
+			font-family: "Oswald", sans-serif;
+			position: absolute;
+			top: 0;
+			right: 0;
+			color: rgba(0,0,0,0.1);
+			z-index: -1;
+		}
+	}
+	.how-it-works__title {
+		font-size: 60px;
+		line-height: 60px;
+		margin-bottom: 72px;
+		letter-spacing: -0.002em;
+	}
+	.how-it-works__content {
+		font-size: 16px;
+		line-height: 24px;
+	}
+}
+
+@media (min-width: @desktop-width) {
+	.how-it-works {
+		padding-top: 72px;
+		margin: 0;	
+	}
+	.how-it-works__list {
+		padding-right: 0;
+	}
+	.how-it-works__item {
+		margin-bottom: 0;
+		margin-right: 0;
+	}
+	.how-it-works__item:nth-child(n + 5) {
+		margin-top: 85px;
+	}
+}

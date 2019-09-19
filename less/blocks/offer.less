@@ -1,0 +1,145 @@
+.offer {
+	color: white;
+	padding-bottom: 22px;
+}
+.offer__content-container {
+	padding-top: 29px;
+	padding-bottom: 156px;
+	background-image: url('../img/background-mobile.webp');
+	background-color: #65a93c;
+	background-repeat: no-repeat;
+	background-position: center top;
+
+	background-size: contain;
+	@media (min-resolution: @retina-dpi) {
+		background-image: url('../img/background-mobile@2x.webp');
+		
+	}
+}
+.no-webp .offer__content-container {
+	background-image: url('../img/background-mobile.jpg');
+}
+.offer__content {
+	font-size: 14px;
+	font-family: 'Oswald', sans-serif;
+	
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	strong {
+		line-height: 36px;
+		font-weight: 400;
+	}
+	&:first-of-type {
+		font-size: 36px;
+		margin-bottom: 13px;
+	}
+	&:last-of-type {
+		text-transform: uppercase;
+	}
+}
+.offer__img-container {
+	width: 280px;
+	height: 271px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -138px;
+	margin-bottom: 2px;
+}
+
+@media (min-width: @tablet-width) {
+	.offer {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		padding-bottom: 0;
+	}
+	.offer__content-container {
+		background-color: white;
+		background-image: none;
+		color: black;
+		padding-top: 56px;
+		padding-bottom: 40px;
+		width: 80%;
+		margin-left: 12.4%;
+	}
+	.no-webp .offer__content-container {
+		background-image: none;
+	}
+	.offer__content {
+		letter-spacing: -0.006em;
+		font-size: 20px;
+			&:first-of-type {
+				width: 440px;
+				font-size: 60px;
+				line-height: 60px;
+				margin-bottom: 34px;
+			}
+			
+			text-align: left;
+		}
+	.offer__img-container{
+		width: 91.6%;
+		height: auto;
+		order: 1;
+		margin-top: -80px;
+		margin-bottom: 0;
+	}
+	.offer_link.button {
+		position: relative;
+		z-index: 1;
+		width: 245px;
+		height: 52px;
+		margin-left: 16%;
+		font-size: 20px;
+	}
+}
+@media (min-width: @desktop-width) {
+	.offer {	
+		flex-direction: row;
+		flex-wrap: wrap;
+		margin-top: 30px;
+		padding-bottom: 0;
+		margin-bottom: 80px;
+		position: relative;
+		&:before {
+			.pseudo-elem();
+			z-index: -1;
+			left: 50%;
+			width: 50%;
+			height: 200%;
+			bottom: 0;
+			background-image: url('../img/background-desktop.jpg');
+			background-color: #65a93c;
+			background-repeat: no-repeat;
+			background-position: center bottom;
+			background-size: auto;
+		}
+	}
+	.offer__content-container {
+		margin-left: 8%;
+		width: auto;
+		padding-bottom: 240px;
+		padding-top: 80px;
+	}
+	.offer_link.button {
+		margin-left: 9%;
+		margin-top: -240px;
+	}
+	.offer__content:first-child {
+		margin-bottom: 30px;
+	}
+	.offer__content:last-child {
+		font-size: 20px;
+		line-height: 20px;
+		margin-bottom: 46px;
+	}
+	.offer__img-container {
+		width: 552px;
+		height: 499px;
+		margin: 0;
+		order: 0;
+		margin-left: -56px;
+
+	}
+}

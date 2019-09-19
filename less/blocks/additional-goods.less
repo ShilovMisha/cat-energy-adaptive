@@ -1,0 +1,213 @@
+.additional-goods {
+	margin-bottom: 35px;
+	padding-top: 30px;
+}
+.additional-goods__title {
+	font-size: 24px;
+	line-height: 24px;
+	font-weight: 400;
+	margin: 0;
+	margin-bottom: 34px;
+	width: 250px;
+	.title-marker();
+}
+.additional-goods__list {
+	.list-reset();
+}
+.additional-goods__item {
+	padding-top: 14px;
+	padding-bottom: 17px;
+	border-top: 1px solid #cdcdcd;
+	&:last-child {
+		border-bottom: 1px solid #cdcdcd;
+	}
+}
+.additional-goods__item-title {
+	margin: 0;
+	font-size: 16px;
+	line-height: 16px;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin-bottom: 7px;
+}
+.additional-goods__cart {
+	width: 100%;
+	font-size: 16px;
+}
+.additional-goods__table {
+	width: 100%;
+	margin-bottom: 10px;
+	margin-left: -4px;
+}
+.additional-goods__trow {
+	td:last-child {
+		text-align: right;
+	}
+}
+.additional-goods__buy-all {
+	margin-top: 40px;
+}
+
+.additional-goods__buy-all-link {
+	padding-top: 186px;
+	padding-bottom: 42px;
+	display: block;
+	background-color: #68b738;
+	color: white;
+	background-image: url('../img/gift-photo-mobile.webp');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	&:before {
+		.pseudo-elem();
+		width: 55px;
+		height: 60px;
+		left: 50%;
+		top: 66px;
+		transform: translateX(-50%);
+		background-image: url('../img/gift.svg');
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	p {
+		margin: 0;
+		text-align: center;
+	}
+	b {
+		font-size: 16px;
+		line-height: 20px;
+		
+		font-weight: 400;
+		font-family: "Arial";
+	}
+}
+.no-webp .additional-goods__buy-all-link {
+	background-image: url('../img/gift-photo-mobile.jpg');
+}
+@media (min-width: @tablet-width) {
+	.additional-goods {
+		padding-top: 65px;
+		margin-bottom: 76px;
+	}
+	.additional-goods__title {
+		font-size: 36px;
+		line-height: 36px;
+		width: 410px;
+		text-align: center;
+		background-color: white;
+		margin-bottom: 80px;
+		
+	}
+	.additional-goods__item {
+		border: 1px solid #cdcdcd;
+		padding: 26px 38px;
+		display: flex;
+		flex-wrap: wrap;
+		&:not(:first-child) {
+			border-top-style: none;
+		}
+	}
+	.additional-goods__item-title {
+		font-size: 20px;
+		line-height: 20px;
+		margin-bottom: 25px;
+	}
+	.additional-goods__table {
+		width: 240px;
+		margin-left: auto;
+		font-size: 16px;
+		line-height: 20px;
+		td:first-child {
+			text-align: right;
+		}
+		td:last-child {
+			width: 96px;
+		}
+	}
+	.additional-goods__buy-all {
+		margin-top: 70px;
+	}
+	.additional-goods__buy-all-link {
+		padding-top: 72px;
+		padding-bottom: 68px;
+		padding-left: 423px;
+		background-image: url('../img/gift-photo-tablet.webp');
+		&:before {
+			left: 92px;
+			transform: none;
+		}
+		p {
+			text-align: left;
+		}
+	}
+	.no-webp .additional-goods__buy-all-link {
+		background-image: url('../img/gift-photo-tablet.jpg');
+	}
+}
+
+@media (min-width: @desktop-width) {
+	.additional-goods {
+		padding-top: 73px;
+		margin-bottom: 85px;
+	}
+	.additional-goods__item {
+		border-left-style: none;
+		border-right-style: none;
+	}
+	.additional-goods__title {
+		margin-left: -41px;
+	}
+	.additional-goods__container {
+		display: flex;
+		justify-content: space-between;
+	}
+	.additional-goods__buy-all {
+		margin-top: 0;
+	}
+	.additional-goods__buy-all-link {
+		background-image: url('../img/gift-photo-desktop.webp');
+		
+		width: 245px;
+		padding-top: 190px;
+		padding-bottom: 40px;
+		padding-left: 0;
+		p {
+			text-align: center;
+		}
+	}
+	.no-webp .additional-goods__buy-all-link {
+		background-image: url('../img/gift-photo-desktop.jpg');
+	}
+	.additional-goods__buy-all-link:before {
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	.additional-goods__list {
+		width: 73.3%;
+	}
+	.additional-goods__item {
+		padding: 0;
+		align-items: center;
+	}
+	.additional-goods__item-title {
+		margin-top: 26px;
+	}
+	.additional-goods__table {
+		width: 326px;
+		margin-left: auto;
+		margin-bottom: 0;
+	}
+	.additional-goods__table td:last-child {
+		width: 85px;
+		text-align: left;
+	}
+	.additional-goods__table td:first-child {
+		text-align: left;
+	}
+	.additional-goods__cart {
+		width: 245px;
+		margin-left: 0;
+		margin-right: 0;
+	}
+}

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<title>Подбор программы Cat Energy</title>
+	<meta name="description" content="Функциональное питание для котов">
+	<link rel="preload" href="css/style.css" as="style">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="preload" href="https://fonts.googleapis.com/css?family=Oswald:400,500&display=swap&subset=cyrillic" as="style">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Oswald:400,500&display=swap&subset=cyrillic" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+	<div class="hide-overflow">
+		<header>
+		<!-- main-nav--open -->
+		<nav class="main-nav main-nav--inner-page">
+			<a href="" class="main-nav__logo-link">
+			<div class="main-nav__logo-container">
+				<picture>
+					<source media="(min-width: 1220px)" srcset="img/logo-desktop.svg">
+
+					<source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+
+					<img src="img/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
+					
+				</picture>
+				<picture>
+					<img src="img/logo-mobile-header.svg" width="101" height="18"  alt="Логотип Cat Energy">
+				</picture>
+			</div>
+			</a>
+			<button class="main-nav__toggle"><span class="visually-hidden">Меню</span></button>
+			<ul class="main-nav__list">
+				<li class="main-nav__item"><a href="index.html">Главная</a></li>
+				<li class="main-nav__item"><a href="catalog.html">Каталог продукции</a></li>
+				<li class="main-nav__item main-nav__item--current"><a href="">Подбор программы</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main class="inner-main">
+		<div class="wrapper">
+		<h1 class="inner-main__title">Подбор программы</h1>
+		<div class="program">
+		<p class="program__intro">
+			Заполните анкету и мы подберем 
+			программу питания для вашего кота
+		</p>
+		<form action="#" class="program__form">
+			<div class="program__field-group">
+			<fieldset class="program__field program__field--name">
+				<legend class="program__legend visually-hidden">Имя, вес, возраст</legend>
+				<p class="program__control-group">
+					<input type="text" placeholder="Барсик" id="name">
+					<label for="name">Имя:*</label>
+				</p>		
+				<p class="program__control-group">
+					<input type="text" placeholder="7" id="weight">
+					<label for="weight">Вес (кг):*</label>
+				</p>
+				<p class="program__control-group">
+					<input type="text" placeholder="7" id="age">
+					<label for="age">Возраст (лет):</label>
+				</p>
+			</fieldset>
+			<fieldset class="program__field
+			program__field--mode">
+				<legend class="program__legend visually-hidden">Режим программы</legend>
+				<p class="program__control-group">
+					<input type="radio" name="mode" id="loss" checked>
+					<label for="loss">Похудение</label>
+				</p>	
+				<p class="program__control-group">
+					<input type="radio" name="mode" id="gain">
+					<label for="gain">Набор массы</label>
+				</p>
+				<p class="program__control-group">
+					<input type="radio" name="mode" id="dnt-know">
+					<label for="dnt-know">Не знаю (нужен ваш совет)</label>
+				</p>
+			</fieldset>
+		</div>
+			<fieldset class="program__field program__field--contants">
+				<legend class="program__legend">Контактные данные<br> (владельца кота)</legend>
+				<div class="program__field-row">
+				<p class="program__control-group">
+					<input type="email" placeholder="kuklachev@gmail.com" id="email">
+					<label for="email">E-mail:*</label>
+				</p>
+				<p class="program__control-group">
+					<input type="tel" placeholder="8 (960) 900-60-90" id="phone" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
+					<label for="phone">Телефон:*</label>
+				</p>
+				</div>
+			</fieldset>
+			<fieldset class="program__field 
+			program__field--comment">
+				<legend class="program__legend">Комментарий</legend>
+				<p class="program__control-group">
+					<textarea name="text" id="textarea" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+					<label for="textarea" class="visually-hidden">Повадки кота</label>
+				</p>
+			</fieldset>
+			<fieldset class="program__field 
+			program__field--additional">
+				<legend class="program__legend">Дополнительно</legend>
+				<div class="program__additional-container">
+				<p class="program__control-group">
+					<input type="checkbox" id="sweetener" checked>
+					<label for="sweetener">Сахарозаменитель</label>
+				</p>
+				<p class="program__control-group">
+					<input type="checkbox" id="water">
+					<label for="water">Питьевая вода</label>
+				</p>
+				<p class="program__control-group">
+					<input type="checkbox" id="milk">
+					<label for="milk">Молоко</label>
+				</p>
+				<p class="program__control-group">
+					<input type="checkbox" id="vitamins">
+					<label for="vitamins">Витамины</label>
+				</p>
+				</div>
+			</fieldset>
+			<input type="submit" class="program__submit button button--green" value="Отправить">
+		</form>
+		<p class="program__footnote">* — Обязательные поля</p>
+	</div>
+	</div>
+	</main>
+	<footer class="main-footer main-footer--inner-page">
+		<section class="contacts">
+			
+			<h2 class="visually-hidden">Связаться с нами</h2>
+			<div class="main-footer__contats-container">
+			<p class="main-footer__contats-content">
+				<b>
+					Приглашаем<br> к сотрудничеству<br> дилеров!
+				</b>
+			</p>
+			<p class="main-footer__contats-content">
+				ул. Большая<br> Конюшенная, д. 19/8<br>
+				<span>Санкт-Петербург</span>
+			</p>
+			</div>
+			
+			<div class="main-footer__contacts-map-container">
+				<iframe title="Мы на гугл-карте" data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003113!2d30.320858716143494!3d59.93871916905416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1568876110609!5m2!1sru!2sua" width="320" height="370" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+					<picture>
+						<source type="image/webp" media="(min-width: 768px)" data-srcset="img/map-desktop.webp,
+						img/map-desktop@2x.webp 2x">
+						<source type="image/jpeg" media="(min-width: 768px)" data-srcset="img/map-desktop.jpg,
+						img/map-desktop@2x.jpg 2x">
+
+						<source type="image/webp" media="(max-width: 767px)" data-srcset="img/map-tablet.webp,
+						img/map-tablet@2x.webp 2x">
+						<img data-src="img/map-tablet.jpg" data-srcset="img/map-tablet@2x.jpg 2x" alt="Мы на карте">
+					</picture>
+				<noscript>
+					<picture>
+						<source type="image/webp" media="(min-width: 768px)" srcset="img/map-desktop.webp,
+						img/map-desktop@2x.webp 2x">
+						<source type="image/jpeg" media="(min-width: 768px)" srcset="img/map-desktop.jpg,
+						img/map-desktop@2x.jpg 2x">
+
+						<source type="image/webp" media="(max-width: 767px)" srcset="img/map-tablet.webp,
+						img/map-tablet@2x.webp 2x">
+						<img  src="img/map-tablet.jpg" srcset="img/map-tablet@2x.jpg 2x" alt="Мы на карте">
+					</picture>
+				</noscript>
+			</div>
+		</section>
+	
+		<div class="wrapper">
+			<div class="main-footer__lower-container">	
+		<div class="main-footer__logo-container">
+			<a href="" class="main-footer__logo-link">
+				<img src="img/footer-logo.svg" alt="Логотип Cat Energy">
+			</a>
+		</div>
+		<ul class="main-footer__social-list">
+			<li class="main-footer__social-item">
+				<a href="#" aria-label="Вконтакте"></a>
+			</li>
+			<li class="main-footer__social-item">
+				<a href="#" aria-label="Инстаграм"></a>
+			</li>
+			<li class="main-footer__social-item">
+				<a href="#" aria-label="Фейсбук"></a>
+			</li>
+		</ul>
+		<div class="main-footer__copyright">
+			<a href="" aria-label="HTML Academy" class="main-footer__copyright-icon"><span>HTML Academy</span></a>
+		</div>
+		</div>	
+		</div>
+	</footer>
+	</div>
+	<script src="js/script.js" async></script>
+	<script src="js/modernizr-custom.js" async></script>
+</body>
+</html>
