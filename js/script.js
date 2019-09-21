@@ -64,12 +64,12 @@ var lazyLoad = function(){
   });
 	}
 
-		let options = {
+		var options = {
 	  threshold: [0],
 	   rootMargin: '100px'
 	};
 
-	let watchMe = new IntersectionObserver(lazyLoadPicture, options);
+	var watchMe = new IntersectionObserver(lazyLoadPicture, options);
 	//установить обсервер для picture
 	var pictures = document.querySelectorAll('picture');
 	for (var i = 0; i < pictures.length; i++) {
