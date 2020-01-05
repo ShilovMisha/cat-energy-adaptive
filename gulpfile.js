@@ -15,6 +15,7 @@ var webp = require("gulp-webp");
 var imagemin = require("gulp-imagemin");
 var imageminSvgo = require("imagemin-svgo");
 var sequence = require("run-sequence");
+var gmq = require('gulp-group-css-media-queries');
 
 var browserSync = require('browser-sync').create();
 var reload      = browserSync.reload;
@@ -64,6 +65,7 @@ gulp.task("style", function(){
 		.pipe(plumber())
 		.pipe(less())
 		.pipe(postcss([autoprefixer()]))
+		.pipe(gmq())
 		.pipe(csso())
 		.pipe(gulp.dest("css"))
 		.pipe(reload({stream: true}));
